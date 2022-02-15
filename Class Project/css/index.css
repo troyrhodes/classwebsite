@@ -1,0 +1,125 @@
+root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --darker-text-color: #E5E5E5;
+    --divider-color: #979797;
+}
+
+html {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../sports/images/soccer/mbappe-dribbling.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    color: white;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container {
+    display: grid;
+    margin: 50px 100px 50px 100px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    border-radius: 20px;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.socials {
+    justify-self: end;
+}
+
+.socials a {
+    margin-right: 20px;
+}
+
+.socials img {
+    height: 24px;
+    width: auto;
+}
+
+.title {
+    justify-items: center;
+}
+
+#website-title {
+    margin: 0;
+    font-size: 96px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#website-tagline {
+    margin: 0;
+    font-size: px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.members {
+    align-self: end;
+    justify-items: center;
+    display: grid;
+    margin: 0 auto;
+    width: fit-content;
+    grid-template-columns: repeat(5, auto);
+}
+
+.member img {
+    height: 80px;
+    width: 80px;
+}
+
+.member {
+    margin-right: 40px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+}
+
+.name-role {
+    margin-left: 5px;
+}
+
+#member-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#member-role {
+    margin: 0;
+    font-size: 12px;
+    color: var(--darker-text-color);
+    font-weight: 300;
+    text-transform: uppercase;
+}
